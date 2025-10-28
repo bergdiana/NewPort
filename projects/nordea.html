@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="robots" content="noindex">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Diana Berg" />
+  <title>Diana Berg - Portfolio</title>
+  <link rel="shortcut icon" href="../assets/images/logo2.png" />
+  <link rel="stylesheet" href="../styles/styles.css" />
+  <script type="module" src="../javascript/index.js"></script>
+  <script async src="https://cdn.splitbee.io/sb.js"></script>
+
+</head>
+
+<body>
+  <div id="loader" class="zoomIn">
+    <div class="spinner-box">
+      <div class="blue-orbit leo"></div>
+
+      <div class="green-orbit leo"></div>
+
+      <div class="red-orbit leo"></div>
+
+      <div class="white-orbit w1 leo"></div>
+      <div class="white-orbit w2 leo"></div>
+      <div class="white-orbit w3 leo"></div>
+    </div>
+  </div>
+
+  <div id="container">
+    <div class="cursor">
+      <div class="cursor__border"></div>
+    </div>
+
+    <nav class="nav container">
+      <div class="wrapper">
+        <section class="nav__mobile">
+          <!-- <a href="#hero"><img class="nav__img" src="./assets/images/logo2.png" alt="logo" /></a> -->
+          <aside class="nav__hamburger">
+            <a class="sidebar-mobile__item mobile-hero active-link" href="../index.html"><i
+                class="fa-solid fa-house"></i>
+              Go Back</a>
+          </aside>
+        </section>
+
+        <section class="nav__desktop">
+          <aside>
+            <!-- <a href="#hero"
+                ><img class="nav__img link hidden fromTop" src="./assets/images/logo2.png" alt="logo"
+              /></a> -->
+          </aside>
+          <section class="nav__desktop-links">
+            <a class="desktop-hero active-link link hidden fromTop" href="../index.html"><i
+                class="fa-solid fa-house"></i>
+              Go Back</a>
+            <!-- <a class="desktop-projects link hidden fromTop" href="#projects"><i class="fa-solid fa-diagram-project"></i>
+              Projects</a>
+            <a class="desktop-skills link hidden fromTop" href="#skills"><i class="fa-solid fa-palette"></i> Skills</a> -->
+          </section>
+          <!--  <article class="nav__desktop-socials">
+              <a
+                class="link hidden fromTop"
+                href="https://www.linkedin.com/in/diberg/"
+                target="_blank"
+                aria-label="LinkedIn"
+                title="LinkedIn"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </article> -->
+          <a class="link hidden fromTop" href="../assets/cv.pdf" area-label="Resume" title="Resume"
+            target="_blank"><button class="button button--secondary link hidden fromTop">Resume</button></a>
+        </section>
+      </div>
+    </nav>
+
+    <main>
+      <!-- This section needs to probably be removed, but removing it causes a lot of terminal errors from Parallax Hero, this is because it is loaded in index.js when loading the javascript files -->
+      <!-- <section class="landing">
+        <img src="../assets/images/background.png" class="background" alt="" />
+        <img src="../assets/images/foreground.png" class="foreground" alt="" />
+
+        <div class="hero-container" id="hero">
+          <div class="wrapper">
+            <section class="hero">
+              <section class="hero__left">
+                <section class="hero__heading-background prevent-select link hidden fromTop">
+                  <h1 class="hero__heading">Hi, I'm Diana!</h1>
+                </section>
+                <p class="hero__paragraph link hidden fromTop">
+                  Been designing for a decade powered by endless cups of coffee and a passion for turning friction into
+                  flow.
+                </p>
+                <a href="https://www.linkedin.com/in/diberg/" target="_blank" class="hero__contact-btn">
+                  <button class="button hero__button link hidden fromTop">
+                    Let's Connect <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </a>
+              </section>
+              <article class="hero__right">
+                <img class="hero__astronaut" src="../assets/images/astronaut.svg" alt="" />
+              </article>
+            </section>
+          </div>
+        </div>
+      </section> -->
+      <div class="container-projects">
+        <div class="wrapper">
+          <section class="projects" id="projects">
+            <h2 class="projects__heading">Projects</h2>
+            <!-- Movilizer project -->
+            <article class="projects__project hidden fromTop">
+              <article class="projects__laptop-mockup">
+                <video disableRemotePlayback muted autoplay playsinline>
+                  <source src="../assets/videos/chatify.webm" type='video/webm;codecs="vp9"' onerror="fallback(parentNode);
+                  function fallback(video) {;
+                    while (video.hasChildNodes()) {
+                      if (video.firstChild instanceof HTMLSourceElement) video.removeChild(video.firstChild);
+                      else video.parentNode.insertBefore(video.firstChild, video);
+                    }
+                    video.parentNode.removeChild(video);
+                  }" />
+                  <img src="./assets/videos/chatify-ios.png" alt="rsduel" loading="lazy" />
+                </video>
+              </article>
+              <section class="projects__info">
+                <h3 class="projects__title">VR: Movilizer</h3>
+                <p class="projects__paragraph">
+                  Movilizer is xyz...
+                </p>
+
+                <a href="" target="_blank" rel="noopener noreferrer">
+                  <button class="button">Check it out right now!</button>
+                </a>
+              </section>
+            </article>
+            <!--END OF Movilizer project -->
+
+
+
+            <!-- <button class="button button--secondary projects__view-all">View All Projects</button> -->
+          </section>
+        </div>
+      </div>
+
+      <div class="container-skills">
+        <div class="wrapper">
+          <section class="skills" id="skills">
+            <h2 class="skills__heading">Project Deepdive</h2>
+
+            <section class="all-skills">
+              <article class="all-skills__skill all-skills__skill--frontend hidden">
+                <section class="all-skills__icons">
+
+                  <section>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt, erat ut lobortis
+                      volutpat, felis enim sodales
+                      massa, ac dapibus sem urna vel diam. Etiam faucibus ex sed sapien molestie volutpat. Praesent sed
+                      viverra purus. Sed
+                      nunc nunc, ultricies id rutrum at, maximus in ligula. Mauris porta nulla ex, id eleifend mi
+                      gravida a. Donec tincidunt
+                      magna ac varius laoreet. Phasellus erat tellus, aliquam non tempus et, placerat sit amet velit.
+                    </p>
+                  </section>
+                  <section>
+
+                    <p>Nunc a iaculis lectus. Ut ultricies luctus neque sit amet tincidunt. Nunc bibendum eros a rutrum
+                      feugiat. Quisque
+                      consequat lacinia libero et gravida. Vivamus iaculis aliquet sem. Etiam finibus pulvinar
+                      tincidunt. Aenean in semper
+                      justo, at pellentesque erat. Aliquam faucibus nisi nibh, et cursus ante tempor id. Integer et
+                      imperdiet dui. Sed diam
+                      erat, cursus ac tortor a, finibus tempor neque. Orci varius natoque penatibus et magnis dis
+                      parturient montes, nascetur
+                      ridiculus mus. Integer mollis viverra tortor. Etiam ac nisl tempus, interdum ante a, semper
+                      libero. Donec vel faucibus
+                      lacus. Mauris id urna at velit auctor malesuada. Mauris sed arcu nisl.</p>
+                  </section>
+                  <section>
+
+                    <p>In condimentum tortor ante, vitae ultrices urna sodales ac. Aliquam eget vehicula ligula. Aliquam
+                      id magna eget neque
+                      fringilla fringilla ut vitae lectus. Integer volutpat orci ipsum, non ultrices ante tristique
+                      euismod. Nullam non
+                      lobortis neque. Duis rutrum convallis mauris eget venenatis. In scelerisque porttitor sapien. Duis
+                      gravida mollis
+                      consequat. Proin nec nisl sit amet ex molestie elementum id sed quam. Suspendisse potenti. Vivamus
+                      id posuere urna, sed
+                      tincidunt odio. Aenean porttitor in diam nec gravida. Proin ullamcorper commodo neque eu dapibus.
+                    </p>
+                  </section>
+                  <section>
+
+                    <p>Nunc ultrices leo orci, a fringilla ex fringilla vitae. Nullam id quam dignissim, commodo tellus
+                      quis, vestibulum elit.
+                      Maecenas tempus, turpis eget laoreet vulputate, turpis ante egestas massa, vitae eleifend dui
+                      sapien eu tellus. In quis
+                      lorem tempus, eleifend turpis at, consequat diam. Cras posuere eget odio quis viverra. Proin
+                      euismod tortor mauris, ut
+                      molestie mauris vestibulum sed. Vivamus faucibus augue et felis rhoncus, nec facilisis eros
+                      sagittis. Interdum et
+                      malesuada fames ac ante ipsum primis in faucibus. Ut tincidunt sit amet ex vitae molestie. Lorem
+                      ipsum dolor sit amet,
+                      consectetur adipiscing elit.
+                  </section>
+                </section>
+                <section>
+                  <article class="project-deepdive__image">
+                    <img src="../assets/images/bg.jpg" alt="Protopie" loading="lazy" />
+                  </article>
+                  <p>Duis feugiat, eros ac lacinia mollis, lacus ligula rhoncus lorem, a ultricies orci odio quis
+                    tortor. Fusce placerat
+                    maximus ex, eget facilisis nisl. Donec dui elit, lobortis non neque quis, facilisis tincidunt leo.
+                    Cras ullamcorper
+                    augue est, eu elementum nulla malesuada id. Duis vel fermentum neque. Cras lobortis ante lorem,
+                    lacinia tincidunt diam
+                    semper vel. Sed elementum ornare blandit. Morbi feugiat varius vestibulum. Fusce lobortis, nulla
+                    vitae vehicula rhoncus,
+                    metus ligula tincidunt est, sit amet congue nisi massa ac quam.
+                </section>
+            </section>
+            </article>
+
+          </section>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://kit.fontawesome.com/8bb946769b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!--<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>-->
+  </div>
+</body>
+
+</html>

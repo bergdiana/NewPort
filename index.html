@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="robots" content="noindex">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Diana Berg" />
+  <title>Diana Berg - Portfolio</title>
+  <link rel="shortcut icon" href="./assets/images/logo2.png" />
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <script type="module" src="./javascript/index.js"></script>
+  <script async src="https://cdn.splitbee.io/sb.js"></script>
+
+</head>
+
+<body>
+  <div id="loader" class="zoomIn">
+    <div class="spinner-box">
+      <div class="blue-orbit leo"></div>
+
+      <div class="green-orbit leo"></div>
+
+      <div class="red-orbit leo"></div>
+
+      <div class="white-orbit w1 leo"></div>
+      <div class="white-orbit w2 leo"></div>
+      <div class="white-orbit w3 leo"></div>
+    </div>
+  </div>
+
+  <div id="container">
+    <div class="cursor">
+      <div class="cursor__border"></div>
+    </div>
+
+    <nav class="nav">
+      <div class="wrapper">
+        <section class="nav__mobile">
+          <!-- <a href="#hero"><img class="nav__img" src="./assets/images/logo2.png" alt="logo" /></a> -->
+          <aside class="nav__hamburger">
+            <i class="nav__hamburger-icon fa-solid fa-bars"></i>
+            <i class="nav__hamburger-close fa-solid fa-xmark"></i>
+          </aside>
+        </section>
+
+        <section class="nav__desktop">
+          <aside>
+            <!-- <a href="#hero"
+                ><img class="nav__img link hidden fromTop" src="./assets/images/logo2.png" alt="logo"
+              /></a> -->
+          </aside>
+          <section class="nav__desktop-links">
+            <a class="desktop-hero active-link link hidden fromTop" href="#hero"><i class="fa-solid fa-house"></i>
+              Home</a>
+            <a class="desktop-projects link hidden fromTop" href="#projects"><i class="fa-solid fa-diagram-project"></i>
+              Projects</a>
+            <a class="desktop-skills link hidden fromTop" href="#skills"><i class="fa-solid fa-palette"></i> Skills</a>
+          </section>
+          <!--  <article class="nav__desktop-socials">
+              <a
+                class="link hidden fromTop"
+                href="https://www.linkedin.com/in/diberg/"
+                target="_blank"
+                aria-label="LinkedIn"
+                title="LinkedIn"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </article> -->
+          <a class="link hidden fromTop" href="./assets/cv.pdf" area-label="Resume" title="Resume"
+            target="_blank"><button class="button button--secondary link hidden fromTop">Resume</button></a>
+        </section>
+      </div>
+    </nav>
+
+    <aside class="sidebar-mobile">
+      <ul class="sidebar-mobile__list">
+        <li>
+          <a class="sidebar-mobile__item mobile-hero active-link" href="#hero"><i class="fa-solid fa-house"></i>
+            Home</a>
+        </li>
+        <li>
+          <a class="sidebar-mobile__item mobile-projects" href="#projects"><i class="fa-solid fa-diagram-project"></i>
+            Projects</a>
+        </li>
+        <li>
+          <a class="sidebar-mobile__item mobile-skills" href="#skills"><i class="fa-solid fa-palette"></i> Skills</a>
+        </li>
+        <!-- <li>
+            <a class="sidebar-mobile__item" href="https://www.linkedin.com/in/diberg/" target="_blank"
+              ><i class="fa-brands fa-linkedin"></i>LinkedIn</a
+            >
+          </li>-->
+        <li>
+          <a class="sidebar-mobile__item mobile-contact" href="#contact"><i class="fa-solid fa-address-card"></i>
+            Contact</a>
+        </li>
+        <li>
+          <a class="sidebar-mobile__item mobile-contact" href="./assets/cv.pdf" target="_blank"><i
+              class="fa-solid fa-file"></i> Resume</a>
+        </li>
+      </ul>
+    </aside>
+
+    <main>
+      <section class="landing">
+        <img src="./assets/images/background.png" class="background" alt="" />
+        <img src="./assets/images/foreground.png" class="foreground" alt="" />
+
+        <div class="hero-container" id="hero">
+          <div class="wrapper">
+            <section class="hero">
+              <section class="hero__left">
+                <section class="hero__heading-background prevent-select link hidden fromTop">
+                  <h1 class="hero__heading">Hi, I'm Diana!</h1>
+                </section>
+                <p class="hero__paragraph link hidden fromTop">
+                  Been designing for a decade powered by endless cups of coffee and a passion for turning friction into
+                  flow.
+                </p>
+                <a href="https://www.linkedin.com/in/diberg/" target="_blank" class="hero__contact-btn">
+                  <button class="button hero__button link hidden fromTop">
+                    Let's Connect <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </a>
+              </section>
+              <article class="hero__right">
+                <img class="hero__astronaut" src="./assets/images/astronaut.svg" alt="" />
+              </article>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <div class="container-projects">
+        <div class="wrapper">
+          <section class="projects" id="projects">
+            <h2 class="projects__heading">Projects</h2>
+            <!-- Scandic project -->
+            <article class="projects__project projects__project--reverse hidden fromTop">
+              <article class="projects__laptop-mockup">
+                <video disableRemotePlayback muted autoplay playsinline>
+                  <source src="./assets/videos/tweeter.webm" type="video/webm" onerror="fallback(parentNode);
+                    function fallback(video) {;
+                  while (video.hasChildNodes()) {
+                    if (video.firstChild instanceof HTMLSourceElement) video.removeChild(video.firstChild);
+                    else video.parentNode.insertBefore(video.firstChild, video);
+                  }
+                  video.parentNode.removeChild(video);
+                }" />
+                  <img src="./assets/videos/tweeter-ios.png" alt="tweeter" loading="lazy" />
+                </video>
+              </article>
+              <section class="projects__info tweeter">
+                <h3 class="projects__title">Scandic: My pages</h3>
+                <p class="projects__paragraph">
+                  Optimizing the user journey for Scandic's "My pages" section to enhance customer experience and
+                  increase perceived value.
+                </p>
+
+                <a href="/projects/nordea.html" rel="noopener noreferrer">
+                  <button class="button">Check it out right now!</button>
+                </a>
+              </section>
+            </article>
+            <!--END OF Scandic project -->
+
+
+            <article class="projects__project projects__project--enginers hidden fromTop">
+              <article class="projects__laptop-mockup">
+                <video disableRemotePlayback muted autoplay loop playsinline>
+                  <source src="./assets/videos/engineers2.webm" type="video/webm" onerror="fallback(parentNode);
+                  function fallback(video) {;
+                    while (video.hasChildNodes()) {
+                      if (video.firstChild instanceof HTMLSourceElement) video.removeChild(video.firstChild);
+                      else video.parentNode.insertBefore(video.firstChild, video);
+                    }
+                    video.parentNode.removeChild(video);
+                  }" />
+                  <img src="./assets/videos/engineers-ios.png" alt="engineers" loading="lazy" />
+                </video>
+              </article>
+              <section class="projects__info projects__info--engineers">
+                <h3 class="projects__title">Nordea</h3>
+                <p class="projects__paragraph">
+                  I was responsible for rewriting the codebase for Engineers, a course database utilized by thousands
+                  of students each month (10-20k sessions monthly).
+                </p>
+                <!--  <section class="all-skills__icons all-skills__icons--small">
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon drive">
+                        <img src="./assets/images/icons/google-drive.svg" alt="drive" loading="lazy" />
+                      </article>
+                      <p>Drive</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon express">
+                        <img src="./assets/images/icons/express.svg" alt="express" loading="lazy" />
+                      </article>
+                      <p>ExpressJS</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon react">
+                        <img src="./assets/images/icons/react.svg" alt="react" loading="lazy" />
+                      </article>
+                      <p>React</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon node">
+                        <img src="./assets/images/icons/node-js.svg" alt="node-js" loading="lazy" />
+                      </article>
+                      <p>NodeJS</p>
+                    </section>
+                  </section>-->
+                <a href="" target="_blank" rel="noopener noreferrer">
+                  <button class="button">Check it out right now!</button>
+                </a>
+              </section>
+            </article>
+
+            <article class="projects__project project__your-project projects__your-project hidden fromTop">
+              <!--<article class="projects__laptop-mockup">
+                  <video disableRemotePlayback muted autoplay playsinline>
+                    <source
+                      src="./assets/videos/yourproj.webm"
+                      type="video/webm"
+                      onerror="fallback(parentNode);
+                  function fallback(video) {;
+                    while (video.hasChildNodes()) {
+                      if (video.firstChild instanceof HTMLSourceElement) video.removeChild(video.firstChild);
+                      else video.parentNode.insertBefore(video.firstChild, video);
+                    }
+                    video.parentNode.removeChild(video);
+                  }"
+                    />
+                    <img src="./assets/videos/yourpj-ios.png" alt="your project" loading="lazy" />
+                  </video>
+                </article>
+                -->
+
+              <section class="projects__info projects__info--project">
+                <h3 class="projects__title">[ YOUR PROJECT ? ]</h3>
+                <p class="projects__paragraph">
+                  Are you looking for a dedicated and skilled professional to join your team or help with your next
+                  project? Look no further!
+                </p>
+                <br>
+                <a href="https://www.linkedin.com/in/diberg/" target="_blank"><button class="button">Contact
+                    Me</button></a>
+              </section>
+            </article>
+            <!-- <button class="button button--secondary projects__view-all">View All Projects</button> -->
+          </section>
+        </div>
+      </div>
+
+      <div class="container-skills">
+        <div class="wrapper">
+          <section class="skills" id="skills">
+            <h2 class="skills__heading">My Toolbox</h2>
+
+            <section class="all-skills">
+              <article class="all-skills__skill all-skills__skill--frontend hidden">
+                <section class="all-skills__icons">
+
+                  <section class="all-skills__container" title="Styled Components">
+                    <article class="all-skills__icon react">
+                      <img src="./assets/images/icons/figma.svg" alt="figma" loading="lazy" />
+                    </article>
+                    <p>Figma</p>
+                  </section>
+
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon shopify">
+                      <img src="./assets/images/icons/penpaper.svg" alt="Pen and paper" loading="lazy" />
+                    </article>
+                    <p>Pen &amp; paper</p>
+                  </section>
+
+
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon photoshop">
+                      <img src="./assets/images/icons/photoshop.svg" alt="Photoshop" loading="lazy" />
+                    </article>
+                    <p>Photoshop</p>
+                  </section>
+
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon postman">
+                      <img src="./assets/images/icons/illustrator.png" alt="illustrator" loading="lazy" />
+                    </article>
+                    <p>Illustrator</p>
+                  </section>
+
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon sass">
+                      <img src="./assets/images/icons/adobexd.png" alt="adobeXD" loading="lazy" />
+                    </article>
+                    <p>Adobe XD</p>
+                  </section>
+
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon js">
+                      <img src="./assets/images/icons/Sketch%20Logo.svg" alt="sketch" loading="lazy" />
+                    </article>
+                    <p>Sketch</p>
+                  </section>
+
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon html5">
+                      <img src="./assets/images/icons/html.svg" alt="html" loading="lazy" />
+                    </article>
+                    <p>HTML5</p>
+                  </section>
+
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon css">
+                      <img src="./assets/images/icons/css3.svg" alt="css" loading="lazy" />
+                    </article>
+                    <p>CSS3</p>
+                  </section>
+
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon js">
+                      <img src="./assets/images/icons/javascript.svg" alt="javascript" loading="lazy" />
+                    </article>
+                    <p>Javascript</p>
+                  </section>
+
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon python">
+                      <img src="./assets/images/icons/python.svg" alt="javascript" loading="lazy" />
+                    </article>
+                    <p>Python</p>
+                  </section>
+
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon react">
+                      <img src="./assets/images/icons/framer.webp" alt="framer" loading="lazy" />
+                    </article>
+                    <p>Framer</p>
+                  </section>
+
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon jest">
+                      <img src="./assets/images/icons/protopie.png" alt="Protopie" loading="lazy" />
+                    </article>
+                    <p>Protopie</p>
+                  </section>
+
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon firebase">
+                      <img src="./assets/images/icons/miro.png" alt="Miro" loading="lazy" />
+                    </article>
+                    <p>Miro</p>
+                  </section>
+
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon prisma">
+                      <img src="./assets/images/icons/figjam.png" alt="Figjam" loading="lazy" />
+                    </article>
+                    <p>FigJam</p>
+                  </section>
+
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon git">
+                      <img src="./assets/images/icons/GAnalytics.svg" alt="Google Analytics" loading="lazy" />
+                    </article>
+                    <p>Google Analytics</p>
+                  </section>
+
+
+
+
+
+                </section>
+              </article>
+
+            </section>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://kit.fontawesome.com/8bb946769b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!--<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>-->
+  </div>
+</body>
+
+</html>
